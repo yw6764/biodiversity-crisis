@@ -1,16 +1,297 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Biodiversity Crisis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Home to Rainforest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Biodiversity Crisis</h1>
+    <header>
+        <a class="site-title" href="index.html">From Home to Rainforest</a>
 
-<p>This website explores biodiversity loss and species extinction around the world.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="species.html">The Orangutan</a></li>
+                <li><a href="forest.html">The Forest</a></li>
+                <li><a href="supply.html">The Product</a></li>
+                <li><a href="action.html">What Now?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <!-- 
+            IMAGE SUGGESTION:
+            Use a large orangutan or rainforest image here.
+            alt="A close-up image of an orangutan in a rainforest, used to introduce the connection between palm oil consumption and habitat loss."
+            -->
+            <div class="hero-text">
+                <p class="eyebrow">Biodiversity loss is closer than it looks.</p>
+                <h1>You probably used palm oil today.</h1>
+                <p>
+                    In cookies, instant noodles, shampoo, soap, and cosmetics, palm oil quietly connects
+                    everyday life to rainforest loss and orangutan habitat decline.
+                </p>
+                <a class="button" href="#daily-products">Start with your home</a>
+            </div>
+        </section>
+
+
+        <!-- INTRODUCTION / PROJECT THESIS -->
+        <section class="intro">
+            <h2>From a product label to a disappearing forest</h2>
+
+            <p>
+                This website explores biodiversity loss through one specific case: orangutan habitat loss
+                linked to palm oil production in Indonesia. Instead of presenting orangutans as a distant
+                wildlife issue, this project asks how an endangered species becomes connected to ordinary
+                consumer products and global systems of production.
+            </p>
+
+            <p>
+                My central argument is that orangutan decline is not only a conservation problem. It is also
+                a media problem, a consumption problem, and a slow environmental crisis hidden inside
+                daily life. By tracing the path from household products back to rainforests, this project
+                reframes biodiversity loss as something shaped by human choices, economic systems,
+                and public understanding.
+            </p>
+        </section>
+
+
+        <!-- EVERYDAY PRODUCTS SECTION -->
+        <section id="daily-products" class="products-section">
+            <h2>Where palm oil hides</h2>
+
+            <p class="section-intro">
+                Palm oil is cheap, versatile, and widely used. That is why it appears in many processed foods,
+                personal care products, cosmetics, and household items. The problem is not that one cookie
+                destroys a forest. The problem is that millions of ordinary products are tied to a global system
+                of extraction, production, and consumption.
+            </p>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use your own photo of cookies or packaged snacks.
+                    alt="A package of cookies representing everyday products that may contain palm oil."
+                    -->
+                    <img src="images/cookies.jpg" alt="A package of cookies representing everyday products that may contain palm oil.">
+                    <h3>Cookies</h3>
+                    <p>Many packaged snacks use palm oil because it is stable, cheap, and gives food a smooth texture.</p>
+                </article>
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use an image of instant noodles.
+                    alt="A package of instant noodles representing processed foods that may contain palm oil."
+                    -->
+                    <img src="images/noodles.jpg" alt="A package of instant noodles representing processed foods that may contain palm oil.">
+                    <h3>Instant noodles</h3>
+                    <p>Fried noodle products often use palm oil, making the ingredient part of quick everyday meals.</p>
+                </article>
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use a shampoo or conditioner bottle.
+                    alt="A bottle of shampoo representing personal care products that may contain palm oil derivatives."
+                    -->
+                    <img src="images/shampoo.jpg" alt="A bottle of shampoo representing personal care products that may contain palm oil derivatives.">
+                    <h3>Shampoo</h3>
+                    <p>Palm oil derivatives can appear in personal care products under names that are hard to recognize.</p>
+                </article>
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use a bar of soap or body wash bottle.
+                    alt="A bar of soap representing household products that may contain palm oil derivatives."
+                    -->
+                    <img src="images/soap.jpg" alt="A bar of soap representing household products that may contain palm oil derivatives.">
+                    <h3>Soap</h3>
+                    <p>Many soaps and cleaners rely on palm-based ingredients because of their texture and foaming properties.</p>
+                </article>
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use a chocolate spread, packaged dessert, or candy bar.
+                    alt="A chocolate spread jar representing sweet products that may contain palm oil."
+                    -->
+                    <img src="images/chocolate.jpg" alt="A chocolate spread jar representing sweet products that may contain palm oil.">
+                    <h3>Chocolate spread</h3>
+                    <p>Palm oil helps create creamy textures in many spreads, candies, and processed desserts.</p>
+                </article>
+
+                <article class="product-card">
+                    <!-- 
+                    IMAGE SUGGESTION:
+                    Use lipstick, lotion, or cosmetic product.
+                    alt="Cosmetic products representing beauty items that may contain palm oil derivatives."
+                    -->
+                    <img src="images/cosmetics.jpg" alt="Cosmetic products representing beauty items that may contain palm oil derivatives.">
+                    <h3>Cosmetics</h3>
+                    <p>Beauty products may contain palm oil derivatives, linking personal care to global commodity chains.</p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- CORE CHAIN SECTION -->
+        <section class="chain-section">
+            <h2>The hidden chain</h2>
+
+            <div class="chain">
+                <div class="chain-item">
+                    <span>1</span>
+                    <h3>Everyday product</h3>
+                    <p>A snack, soap, or cosmetic item contains palm oil or palm-based ingredients.</p>
+                </div>
+
+                <div class="chain-item">
+                    <span>2</span>
+                    <h3>Global supply chain</h3>
+                    <p>Palm oil travels through plantations, mills, exporters, and importing countries.</p>
+                </div>
+
+                <div class="chain-item">
+                    <span>3</span>
+                    <h3>Forest conversion</h3>
+                    <p>Rainforests are cleared or fragmented to create simplified plantation landscapes.</p>
+                </div>
+
+                <div class="chain-item">
+                    <span>4</span>
+                    <h3>Orangutan habitat loss</h3>
+                    <p>As forests shrink, orangutans lose food sources, movement routes, and safe habitats.</p>
+                </div>
+            </div>
+
+            <p class="analysis">
+                This chain matters because it changes how biodiversity loss is framed. The issue is not simply
+                that orangutans are endangered. The deeper issue is that everyday consumption can be separated
+                from the ecological damage that makes it possible. The consumer sees a cheap product; the
+                rainforest absorbs the cost.
+            </p>
+        </section>
+
+
+        <!-- KEY CONCEPTS SECTION -->
+        <section class="concepts-preview">
+            <h2>Three ways to understand this crisis</h2>
+
+            <div class="concept-grid">
+
+                <article>
+                    <h3>Anthropocene</h3>
+                    <p>
+                        Palm oil expansion shows how human economic systems reshape landscapes. Forests become
+                        plantations, species lose habitat, and local ecosystems are reorganized around global demand.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Slow Violence</h3>
+                    <p>
+                        Orangutan decline does not happen all at once. It occurs through gradual forest loss,
+                        habitat fragmentation, and repeated development decisions that slowly become irreversible.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Framing</h3>
+                    <p>
+                        If orangutan extinction is framed only as a distant animal issue, many people will not care.
+                        This website reframes it as a system connecting daily life, consumption, and ecological loss.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SITE ROADMAP -->
+        <section class="roadmap">
+            <h2>Explore the story</h2>
+
+            <div class="roadmap-grid">
+
+                <a class="roadmap-card" href="species.html">
+                    <h3>The Orangutan</h3>
+                    <p>Learn why Bornean and Sumatran orangutans are critically endangered.</p>
+                </a>
+
+                <a class="roadmap-card" href="forest.html">
+                    <h3>The Forest</h3>
+                    <p>See how Indonesian forest loss makes slow violence visible.</p>
+                </a>
+
+                <a class="roadmap-card" href="supply.html">
+                    <h3>The Product</h3>
+                    <p>Trace palm oil from Indonesian production regions to global consumer markets.</p>
+                </a>
+
+                <a class="roadmap-card" href="action.html">
+                    <h3>What Now?</h3>
+                    <p>Move beyond guilt and explore awareness, transparency, and collective action.</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- PAGE FOOTNOTES / REFERENCES -->
+    <footer>
+        <section class="footnotes">
+            <h2>References for this page</h2>
+
+            <ol>
+                <li>
+                    Vijay, Varsha, Stuart L. Pimm, Clinton N. Jenkins, and Sharon J. Smith. 
+                    “The Impacts of Oil Palm on Recent Deforestation and Biodiversity Loss.” 
+                    <em>PLOS ONE</em>, 2016.
+                </li>
+
+                <li>
+                    IUCN Red List of Threatened Species. 
+                    “Bornean Orangutan.” 
+                    <a href="https://www.iucnredlist.org/species/17975/17966347" target="_blank">
+                        www.iucnredlist.org/species/17975/17966347
+                    </a>.
+                </li>
+
+                <li>
+                    IUCN Red List of Threatened Species. 
+                    “Sumatran Orangutan.” 
+                    <a href="https://www.iucnredlist.org/species/121097935/123797627" target="_blank">
+                        www.iucnredlist.org/species/121097935/123797627
+                    </a>.
+                </li>
+
+                <li>
+                    O’Neill, Saffron, and Sophie Nicholson-Cole. 
+                    “Fear Won’t Do It: Promoting Positive Engagement with Climate Change Through Visual and Iconic Representations.” 
+                    <em>Science Communication</em>, 2009.
+                </li>
+            </ol>
+        </section>
+
+        <p class="footer-note">Created for Media and Environment.</p>
+    </footer>
 
 </body>
-
 </html>
