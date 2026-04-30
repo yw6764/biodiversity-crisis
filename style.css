@@ -81,27 +81,16 @@ nav a:hover {
 ========================= */
 
 .hero {
-    min-height: 82vh;
-    padding: 7rem 6%;
-    display: flex;
+    min-height: 86vh;
+    padding: 6rem 6%;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3rem;
     align-items: center;
     background:
-        linear-gradient(
-            90deg,
-            rgba(31, 42, 34, 0.88),
-            rgba(31, 42, 34, 0.63),
-            rgba(31, 42, 34, 0.18)
-        ),
-        url("orangutan-hero.jpg");
-    background-size: cover;
-    background-position: center;
+        radial-gradient(circle at 15% 15%, rgba(243, 200, 122, 0.18), transparent 30%),
+        linear-gradient(135deg, #203828 0%, #314d39 55%, #4e6a48 100%);
     color: #fffaf0;
-}
-
-/* If you do not have orangutan-hero.jpg yet,
-   the hero will still show a clean dark green background. */
-.hero {
-    background-color: #263b2b;
 }
 
 .hero-text {
@@ -118,7 +107,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(3rem, 8vw, 6.8rem);
+    font-size: clamp(3rem, 7vw, 6.4rem);
     line-height: 0.95;
     margin: 0 0 1.5rem;
     max-width: 900px;
@@ -145,6 +134,32 @@ nav a:hover {
 .button:hover {
     background: #fff0bd;
     transform: translateY(-3px);
+}
+
+.hero-image {
+    margin: 0;
+    background: rgba(255, 250, 240, 0.08);
+    border: 1px solid rgba(255, 250, 240, 0.18);
+    border-radius: 34px;
+    padding: 1rem;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.28);
+    transform: rotate(1.5deg);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24px;
+}
+
+.hero-image figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #e8ddc6;
+    margin-top: 0.9rem;
 }
 
 /* =========================
@@ -217,7 +232,6 @@ section h3 {
     box-shadow: 0 22px 45px rgba(32, 45, 35, 0.16);
 }
 
-/* This fixes your huge images */
 .product-card img {
     width: 100%;
     height: 230px;
@@ -385,17 +399,29 @@ section h3 {
 }
 
 /* =========================
-   FOOTER / REFERENCES
+   FOOTER
 ========================= */
 
 footer {
     background: #17251b;
     color: #e8ddc6;
-    padding: 3rem 6%;
+    padding: 2rem 6%;
 }
 
+.footer-note {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: #b9ad94;
+}
+
+/* =========================
+   FOOTNOTES FOR OTHER PAGES
+========================= */
+
 .footnotes {
-    padding: 0;
+    padding: 3rem 0 0;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -419,12 +445,12 @@ footer {
     text-decoration: underline;
 }
 
-.footer-note {
-    max-width: 1000px;
-    margin: 2rem auto 0;
+.citation {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.85rem;
-    color: #b9ad94;
+    font-size: 0.8rem;
+    vertical-align: super;
+    color: #8b5e2e;
+    font-weight: 700;
 }
 
 /* =========================
@@ -443,6 +469,18 @@ footer {
         gap: 0.8rem;
     }
 
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        transform: none;
+    }
+
+    .hero-image img {
+        height: 420px;
+    }
+
     .product-grid,
     .concept-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -456,7 +494,7 @@ footer {
 
 @media (max-width: 620px) {
     .hero {
-        min-height: 75vh;
+        min-height: auto;
         padding: 5rem 6%;
     }
 
@@ -466,6 +504,10 @@ footer {
 
     .hero p {
         font-size: 1.05rem;
+    }
+
+    .hero-image img {
+        height: 300px;
     }
 
     .product-grid,
