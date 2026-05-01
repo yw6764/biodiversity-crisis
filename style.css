@@ -819,6 +819,49 @@ nav a.active {
     }
 }
 
+/* =========================
+   HOMEPAGE HERO OVERRIDE
+   Full-background orangutan image
+========================= */
 
+.home-hero {
+    min-height: 86vh;
+    padding: 7rem 6%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(31, 42, 34, 0.92) 0%,
+            rgba(31, 42, 34, 0.72) 42%,
+            rgba(31, 42, 34, 0.16) 100%
+        ),
+        url("orangutan-hero.jpg");
+    background-size: cover;
+    background-position: center right;
+    color: #fffaf0;
+}
+
+.home-hero .hero-text {
+    max-width: 760px;
+}
+
+.home-hero h1 {
+    font-size: clamp(3rem, 8vw, 6.8rem);
+    line-height: 0.95;
+    margin: 0 0 1.5rem;
+    max-width: 900px;
+}
+
+.home-hero p {
+    font-size: 1.25rem;
+    max-width: 680px;
+    color: #f7efd8;
+}
+
+/* Hide the old homepage figure if it still exists by accident */
+.home-hero .hero-image {
+    display: none;
+}
 
 
