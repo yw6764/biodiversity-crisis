@@ -1126,6 +1126,195 @@ nav a.active {
 }
 
 /* =========================
+   ACTION PAGE UPDATED
+========================= */
+
+.action-feature {
+    background: #efe5d0;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.action-text p {
+    font-size: 1.08rem;
+    max-width: 760px;
+}
+
+.action-image {
+    margin: 0;
+    background: #fffaf0;
+    border: 1px solid rgba(45, 74, 54, 0.12);
+    border-radius: 28px;
+    padding: 1rem;
+    box-shadow: 0 18px 45px rgba(32, 45, 35, 0.12);
+}
+
+.action-image img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.action-image figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #5c665b;
+    margin-top: 0.9rem;
+}
+
+.mini-list {
+    margin-top: 1.6rem;
+    background: #fffaf0;
+    border-left: 6px solid #8b5e2e;
+    padding: 1.2rem 1.4rem;
+    border-radius: 0 18px 18px 0;
+}
+
+.mini-list h3 {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mini-list ul {
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+}
+
+.mini-list li {
+    margin-bottom: 0.5rem;
+}
+
+.rspo-section {
+    background: #203828;
+}
+
+.rspo-section figure img {
+    background: #fffaf0;
+    padding: 1.2rem;
+    object-fit: contain;
+}
+
+.rspo-section figcaption a.citation {
+    color: #f3c87a;
+}
+
+.action-cards-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.action-card-grid {
+    margin-top: 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.action-card {
+    background: #fffaf0;
+    border: 1px solid rgba(45, 74, 54, 0.12);
+    border-radius: 24px;
+    padding: 1.4rem;
+    box-shadow: 0 14px 35px rgba(32, 45, 35, 0.08);
+}
+
+.action-card span {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: #e4efe0;
+    color: #2d4a36;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    margin-bottom: 0.8rem;
+}
+
+.action-card h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    margin: 0.3rem 0 0.6rem;
+}
+
+.action-card p {
+    font-size: 0.95rem;
+    color: #445348;
+}
+
+.action-split {
+    background: #f7f3e8;
+}
+
+.action-story-section {
+    background: #203828;
+}
+
+.takeaway-section {
+    background: #efe5d0;
+}
+
+.takeaway-section h2,
+.takeaway-section .analysis {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.takeaway-grid {
+    max-width: 1100px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+}
+
+.takeaway-grid article {
+    background: #fffaf0;
+    border-radius: 24px;
+    padding: 1.4rem;
+    border: 1px solid rgba(45, 74, 54, 0.12);
+    box-shadow: 0 14px 35px rgba(32, 45, 35, 0.08);
+}
+
+.takeaway-grid h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+.takeaway-grid p {
+    color: #445348;
+}
+
+/* Responsive action page */
+@media (max-width: 950px) {
+    .action-feature {
+        grid-template-columns: 1fr;
+    }
+
+    .action-card-grid,
+    .takeaway-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 620px) {
+    .action-card-grid,
+    .takeaway-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-image img {
+        max-height: 320px;
+    }
+}
+
+/* =========================
    HOMEPAGE HERO OVERRIDE
    Full-background orangutan image
 ========================= */
